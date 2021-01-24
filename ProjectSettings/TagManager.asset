@@ -6,6 +6,7 @@ TagManager:
   tags:
   - asteroid
   - Bullet
+  - childAsteroid
   layers:
   - Default
   - TransparentFX

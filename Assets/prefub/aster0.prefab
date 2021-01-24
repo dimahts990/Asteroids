@@ -98,13 +98,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  rotation: 0
   childMetior:
   - {fileID: 5630998424702296885, guid: 2d1be5f90013a5c40ac3ac6b94439a8d, type: 3}
   - {fileID: 3525004854431720866, guid: 8a5f181ae4f15bd4c823e562a774a326, type: 3}
   - {fileID: 7881630660371864652, guid: 9f89d8053568c2040b93542350773ca1, type: 3}
   - {fileID: 439172152332050314, guid: 8b988539fe9a1204f8f291e8bec89389, type: 3}
   - {fileID: 5501303729302233899, guid: f5ce83408a034924c8997f6e97c9b14e, type: 3}
+  bang: {fileID: 3882695869591023868, guid: 93c9c7526277f35418826f9e3d438705, type: 3}
+  rotation: 0
 --- !u!50 &6757040061316315006
 Rigidbody2D:
   serializedVersion: 4
@@ -113,14 +114,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3022319978123935252}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

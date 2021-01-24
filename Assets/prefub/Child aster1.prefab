@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3974738145704603466}
   - component: {fileID: 5171178407494881207}
-  - component: {fileID: 4276433355985240439}
   - component: {fileID: 4476374230426975713}
   - component: {fileID: 4787672173065971785}
+  - component: {fileID: -5820906696099641802}
   m_Layer: 0
   m_Name: Child aster1
-  m_TagString: asteroid
+  m_TagString: childAsteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,21 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4276433355985240439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3525004854431720866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9edb2c20773a3d7448ff8efc505a3417, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  rotation: 0
-  childMetior: []
 --- !u!60 &4476374230426975713
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -376,16 +361,30 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3525004854431720866}
-  m_BodyType: 1
-  m_Simulated: 0
+  m_BodyType: 0
+  m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-5820906696099641802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3525004854431720866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5990a9d94e50324ba33bd62f110ceb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  bang: {fileID: 3882695869591023868, guid: 93c9c7526277f35418826f9e3d438705, type: 3}
