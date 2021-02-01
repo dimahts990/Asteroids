@@ -18,6 +18,10 @@ public class Player : MonoBehaviour
         {
             Instantiate(bullet, bulletOut.transform.position, bulletOut.transform.rotation);
         }
+        if (transform.position.x > 11.6f) transform.position = new Vector2(-11.6f, transform.position.y);
+        if (transform.position.x < -11.6f) transform.position = new Vector2(11.6f, transform.position.y);
+        if (transform.position.y > 5.6f) transform.position = new Vector2(transform.position.x, -5.6f);
+        if (transform.position.y < -5.6f) transform.position = new Vector2(transform.position.x, 5.6f);
     }
 
     void DiePlayer()
